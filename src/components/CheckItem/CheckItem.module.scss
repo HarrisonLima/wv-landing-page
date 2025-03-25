@@ -1,0 +1,18 @@
+// src/components/CheckItem/CheckItem.module.scss
+@import "../../styles/variables";
+
+.checkItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.8rem;
+
+  label {
+    color: $text-color;
+    cursor: pointer;
+  }
+
+  input {
+    accent-color: $primary-color;
+  }
+}
