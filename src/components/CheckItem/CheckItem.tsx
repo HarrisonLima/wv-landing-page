@@ -1,4 +1,3 @@
-// src/components/CheckItem/CheckItem.tsx
 import React from 'react';
 import styles from './CheckItem.module.scss';
 
@@ -13,15 +12,18 @@ export const CheckItem: React.FC<CheckItemProps> = ({
   children,
   onChange 
 }) => {
+  const id = `check-${Math.random().toString(36).substr(2, 9)}`;
+  
   return (
     <div className={styles.checkItem}>
       <input
         type="checkbox"
         checked={checked}
         onChange={(e) => onChange?.(e.target.checked)}
-        id={`check-${Math.random().toString(36).substr(2, 9)}`}
+        id={id}
+        className={styles.checkbox}
       />
-      <label htmlFor={`check-${Math.random().toString(36).substr(2, 9)}`}>
+      <label htmlFor={id} className={styles.label}>
         {children}
       </label>
     </div>

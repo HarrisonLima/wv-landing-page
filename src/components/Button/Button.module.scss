@@ -1,16 +1,17 @@
+// src/components/Button/Button.module.scss
 @import "../../styles/variables.scss";
 
-.ctaButton {
-    background: $primary-color;
+.button {  // Mudando de .ctaButton para .button
+    background-image: linear-gradient(145deg, $accent-color, $accent-100);
     color: white;
     padding: 0.8rem 1.5rem;
     border: none;
     border-radius: 4px;
     font-weight: bold;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: background-image 0.3s;
   
     &:hover {
-      background: darken($primary-color, 10%);
+      background: darken($accent-color, 10%);
     }
-  }
+}
