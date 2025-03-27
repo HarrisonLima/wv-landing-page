@@ -1,23 +1,36 @@
 // src/sections/Pricing/PricingSection.tsx
 import React from 'react';
 import styles from './Pricing.module.scss';
-import { CheckItem } from '../../components/CheckItem/CheckItem';
+import confirm from '../../assets/confirm.svg';
+import fire from '../../assets/fire.svg';
+import { Button } from '../../components/Button/Button';
 
 export const PricingSection: React.FC = () => {
   return (
     <section className={styles.pricing}>
-      <div className={styles.priceTag}>
-        <h2>R$ 9,90 <span>/ 1x sem juros</span></h2>
-      </div>
+      <div className={styles.pricingContent}>
+        <div className={styles.priceCard}>
+          <div className={styles.priceHeader}>
+            <div className={styles.priceTag}>
+              <h3>R$ 9,90</h3>
+              <span>/ 1x sem juros</span>
+            </div>
+          </div>
 
-      <div className={styles.benefitsList}>
-        <CheckItem checked={false}>Acesso imediato ao curso completo</CheckItem>
-        <CheckItem checked={false}>Apostilas, exercícios práticos e cifras</CheckItem>
-        <CheckItem checked={false}>Garantia de 07 dias</CheckItem>
-        <CheckItem checked={false}>Bonus: Aprendemos sobre fingerstyle</CheckItem>
-      </div>
+          <div className={styles.divider}></div>
 
-      <button className={styles.ctaButton}>Aprender Violão Agora!</button>
+          <div className={styles.benefitsList}>
+            <span> <img src={confirm} alt="" />Acesso imediato ao curso completo</span>
+            <span> <img src={confirm} alt="" />Apostilas, exercícios práticos e cifras</span>
+            <span> <img src={confirm} alt="" />Garantia de 07 dias</span>
+            <span> <img src={fire} alt="" />Bônus: Aprendemos sobre fingerstyle</span>
+            
+          </div>
+          <div className={styles.divider}></div>
+
+          <Button>Aprender Violão Agora!</Button>
+        </div>
+      </div>
     </section>
   );
 };

@@ -2,18 +2,19 @@
 
 
 .modulesContainer {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    padding: 2rem;
-    background-color: #0E0E0E;
+  display: flex
+;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #0E0E0E;
+  flex-wrap: nowrap;
   }
   
   .moduleColumn {
     display: flex;
     flex-direction: column;
-    width: 45%;
-    max-width: 300px;
+    width: 100%;
   }
   
   .modulePair {
@@ -23,12 +24,13 @@
   }
   
   .moduleCard {
-    background: #232323;
+    background: #0E0E0E;
     border-radius: 8px;
     padding: 1.5rem;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 0px 12px 0px rgb(37, 37, 37);
     text-align: center;
     transition: transform 0.3s ease;
+    min-width: 140px;
   
     &:hover {
       transform: translateY(-3px);
@@ -46,4 +48,9 @@
       font-weight: 500;
       margin: 0;
     }
+  }
+  .moduleImg {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px rgb(37, 37, 37);
   }

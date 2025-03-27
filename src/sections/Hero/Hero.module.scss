@@ -7,7 +7,7 @@
 
   h1 {
     color: $text-color;
-    font-size: 2.5rem;
+    font-size: 24px;
     margin-bottom: 1rem;
   }
 
@@ -27,19 +27,14 @@
     align-items: flex-start;
   }
 
-  .arrowItem {
-    // Agora usando module-style (camelCase)
-    position: relative;
-    padding-left: 1.5rem;
-    margin-bottom: 0.5rem;
-    display: block; // Garante que cada item fique em sua própria linha
+  .heroFeatures {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: flex-start;
 
-    &::before {
-      content: ">";
-      position: absolute;
-      left: 0;
-      color: $accent-color;
-      font-weight: bold;
+    img{
+      margin-right: 10px;
     }
   }
 

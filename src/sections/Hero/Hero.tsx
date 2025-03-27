@@ -3,16 +3,17 @@ import React from 'react';
 import styles from './Hero.module.scss';
 import { Button } from '../../components/Button/Button';
 import paleta from '../../assets/paleta.png';
+import arrow from '../../assets/arrow.svg';
 
 export const Hero: React.FC = () => {
   return (
     <section className={styles.hero}>
       <h1>Aprenda violão do zero em <h1>8 semanas!</h1></h1>
       <div>
-        <section>
-          <span className={styles.arrowItem}>Material didático</span>
-          <span className={styles.arrowItem}>Teoria musical</span>
-          <span className={styles.arrowItem}>Método simplificado</span>
+        <section className={styles.heroFeatures}>
+          <span><img src={arrow} alt="" /> Material didático</span>
+          <span><img src={arrow} alt="" /> Teoria musical</span>
+          <span><img src={arrow} alt="" /> Método simplificado</span>
         </section>
         <section>
           <img src={paleta} alt="" />

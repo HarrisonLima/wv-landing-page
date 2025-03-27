@@ -10,6 +10,7 @@
     font-weight: bold;
     cursor: pointer;
     transition: background-image 0.3s;
+    width: 100%;
   
     &:hover {
       background: darken($accent-color, 10%);

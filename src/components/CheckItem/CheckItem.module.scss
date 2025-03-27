@@ -24,8 +24,8 @@
   transition: all 0.2s ease;
 
   &:checked {
-    background-color: $primary-color;
-    border-color: $primary-color;
+    background-color: #005212;
+    border-color: #005212;
   }
 
   &:checked::after {
