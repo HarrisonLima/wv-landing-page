@@ -1,7 +1,7 @@
 // Hero.tsx
 import React from 'react';
 import styles from './Hero.module.scss';
-import { Button } from '../../components/Button/Button';
+import { ButtonAnchor } from '../../components/ButtonAnchor/ButtonAnchor';
 import paleta from '../../assets/paleta.png';
 import arrow from '../../assets/arrow.svg';
 
@@ -33,7 +33,7 @@ export const Hero: React.FC = () => {
         </video>
       </section>
 
-      <Button>Acessar conteúdo</Button>
+      <ButtonAnchor href='https://mestiwellington.hotmart.host/captura?fbclid=PAY2xjawJVWLVleHRuA2FlbQIxMQABppHzQIKqY6fcISMAp1q-N15nWI9zn9Ml0kNUl-OvNqBC3DVK76x3mBia3Q_aem_UlvYz7WwSyc9R36LBrkj8g"'>Acessar conteúdo</ButtonAnchor>
     </section>
   );
 };

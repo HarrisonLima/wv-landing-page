@@ -3,7 +3,7 @@ import React from 'react';
 import styles from './Pricing.module.scss';
 import confirm from '../../assets/confirm.svg';
 import fire from '../../assets/fire.svg';
-import { Button } from '../../components/Button/Button';
+import { ButtonAnchor } from '../../components/ButtonAnchor/ButtonAnchor';
 
 export const PricingSection: React.FC = () => {
   return (
@@ -28,7 +28,7 @@ export const PricingSection: React.FC = () => {
           </div>
           <div className={styles.divider}></div>
 
-          <Button>Aprender Violão Agora!</Button>
+          <ButtonAnchor href='https://mestiwellington.hotmart.host/captura?fbclid=PAY2xjawJVWLVleHRuA2FlbQIxMQABppHzQIKqY6fcISMAp1q-N15nWI9zn9Ml0kNUl-OvNqBC3DVK76x3mBia3Q_aem_UlvYz7WwSyc9R36LBrkj8g"'>Aprender Violão Agora!</ButtonAnchor>
         </div>
       </div>
     </section>

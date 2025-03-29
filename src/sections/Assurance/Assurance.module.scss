@@ -1,0 +1,101 @@
+@import "../../styles/variables";
+
+.assurance {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0E0E0E;
+  box-shadow: 0 0px 12px 0px rgb(37, 37, 37);
+
+  .assuranceContent {
+    width: 100%;
+    max-width: 765px;
+  }
+
+  .assuranceCard {
+    background: #0E0E0E;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 0px 12px 0px rgb(37 37 37);
+    text-align: center;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:hover {
+      transform: translateY(-3px);
+    }
+  }
+
+  .assuranceHeader {
+    margin-bottom: 1.5rem;
+
+    h2 {
+      color: $text-color;
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .assuranceTag {
+      display: flex;
+      align-items: baseline;
+      gap: 0.4rem;
+      justify-content: center;
+
+      h3 {
+        color: $accent-color;
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin: 0;
+      }
+
+      span {
+        color: $text-color;
+        font-size: 1rem;
+        opacity: 0.8;
+        transform: translateY(8px);
+      }
+    }
+
+  }
+
+  .benefitsList {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+    gap: 15px;
+    max-width: 250px;
+
+
+    img {
+      margin-right: 10px;
+    }
+  }
+
+  .divider {
+    width: 100%;
+    height: 1px;
+    background: #C7C7C7;
+    margin: 1rem 0;
+  }
+
+  .ctaButton {
+    background: $accent-color;
+    color: #0E0E0E;
+    border: none;
+    padding: 1rem 2rem;
+    width: 100%;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 500;
+
+    &:hover {
+      background: lighten($accent-color, 10%);
+      transform: translateY(-2px);
+    }
+  }
+}
