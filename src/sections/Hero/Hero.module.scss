@@ -2,8 +2,13 @@
 
 .hero {
   text-align: center;
-  padding: 2rem;
+  padding: 0 2rem;
   font-family: $font-stack;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:10px;
+  width: 100%;
 
   h1 {
     color: $text-color;
@@ -25,6 +30,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    width: 100%;
   }
 
   .heroFeatures {
@@ -32,17 +38,19 @@
     flex-direction: column;
     gap: 1em;
     align-items: flex-start;
+    width: 100%;
 
-    img{
+    img {
       margin-right: 10px;
     }
   }
 
-  .video-section {
+  .videoSection {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
     padding: 10px 0;
+    width: 100%;
 
     video {
       border-radius: 8px;

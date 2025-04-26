@@ -20,7 +20,7 @@ export const Hero: React.FC = () => {
         </section>
       </div>
 
-      <section className="video-section">
+      <section className={styles.videoSection}>
         <video
           controls
           width="100%"
